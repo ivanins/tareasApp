@@ -1,0 +1,76 @@
+
+body {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    
+    min-height: 100vh; /* Asegura que el contenedor ocupe al menos el 100% de la altura de la ventana gráfica */
+    margin: 0; /* Elimina el margen predeterminado del body */
+  }
+  
+  
+  .todoContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+.todoCreateForm{
+    display: flex;
+    gap: 5px;
+    
+}
+
+.todoInput{
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.buttonCreate{
+    border: none;
+    border-radius: 3px;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+.buttonCreate:focus,
+.buttonCreate:active {
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px; /* Agregar radio de borde inicial */
+    transition: border-radius 0.5s ease-in-out; /* Agregar transición para el cambio de radio de borde */
+  }
+  
+  .todoContainer:hover {
+    border-radius: 10px; /* Cambiar el radio de borde al pasar el cursor */
+  }
+  
+
+.todo{
+    padding: 10px;
+    
+}
+
+.todoTitle{
+    flex: 1;
+    font-size: 20px;
+}
+
+.todoUpdateForm, .todoInfo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
